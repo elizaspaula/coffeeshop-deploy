@@ -1,0 +1,402 @@
+@use "./partials/variable" as *;
+@use "./partials/mixins" as *;
+
+/*---HERO SECTION ---*/
+
+.header {
+  background-color: $primary-color;
+}
+
+.index-coffee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  @include desktop {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 3rem;
+  }
+}
+
+.index-coffee__div {
+  width: 50%;
+  text-align: left;
+}
+
+.index-coffee__parag {
+  text-align: left;
+  padding: 1rem 0;
+  width: 100%;
+
+  @include desktop {
+    width: 65%;
+    padding: 20px 0 40px 0;
+  }
+}
+
+.index-coffee__title {
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: $graphite;
+  margin: 10px 0px 10px 0px;
+}
+
+.index-coffee__parag,
+.index-hours__parag,
+.index-address__parag {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: $graphite;
+
+  @include desktop {
+    font-size: 1.125rem;
+  }
+}
+
+.btn__shop-now,
+.btn__view-all,
+.btn-learn-more {
+  padding: 0.5rem;
+  background-color: $secondary-color;
+  color: $white;
+  font-size: 1.313rem;
+  border: none;
+  text-decoration: none;
+  position: relative;
+
+  @include desktop {
+    padding: 1rem;
+  }
+}
+
+.btn__shop-now::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 0.125rem solid $graphite;
+  position: absolute;
+  top: -0.4125rem;
+  left: -0.4125rem;
+}
+
+/*---PRODUCTS SECTION---*/
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: $graphite;
+
+  @include desktop {
+    font-size: 2.063rem;
+  }
+}
+
+.index-products__section {
+  background-color: $light-gray;
+}
+
+.index-products__item {
+  text-align: center;
+}
+
+.index-products__title {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: $graphite;
+  margin: 0px;
+  padding: 1rem;
+
+  @include desktop {
+    padding: 1rem 3rem;
+  }
+}
+
+/* --- PRODUCTS CARD CSS --- */
+
+.index-products__div {
+  padding: 0;
+
+  @include desktop {
+    padding: 40px 100px;
+  }
+}
+
+.index-products__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.index-products__image-div {
+  padding: 20px;
+}
+
+.index-products__list li {
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  box-shadow: 0px 5px 9px -1px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+  min-width: 330px;
+  max-width: 350px;
+  min-height: 440px;
+  max-height: 460px;
+  background-color: $white;
+}
+
+.index-products__list li:hover {
+  border-color: #c78c19;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.btn__view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  @include desktop {
+    padding-bottom: 2.5rem;
+  }
+}
+.btn__view-all::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 0.125rem solid $graphite;
+  position: absolute;
+  top: -0.4125rem;
+  left: -0.4125rem;
+}
+
+.index-products__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 22px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.index-products__copy {
+  text-align: left;
+}
+
+.index-products__item {
+  font-size: 2.063rem;
+  font-weight: 300;
+  color: $graphite;
+  margin-top: 21px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.index-products__subtitle {
+  margin-top: 5px;
+  text-align: left;
+  color: #909090;
+}
+
+.index-products__price {
+  font-size: 2.063rem;
+  color: $secondary-color;
+  text-align: center;
+}
+
+/*--DISCOUNT ---*/
+
+.index-discount {
+  background-color: #393939;
+  margin: 1rem;
+
+  @include desktop {
+    max-width: 90%;
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+    margin-bottom: 7.5rem;
+  }
+}
+
+.index-discount__description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+  padding: 2.5rem 0.9375rem;
+
+  @include desktop {
+    font-size: 2.813rem;
+  }
+}
+
+.index-discount__bold {
+  font-weight: 700;
+}
+
+.index-discount__main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
+}
+
+.index-discount__icons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.625rem;
+  padding-bottom: 1.25rem;
+}
+
+.icons {
+  min-width: 15px;
+  max-width: 15px;
+  width: 15px;
+
+  @include desktop {
+    min-width: 3.125rem;
+    max-width: 7.5rem;
+    width: 3.125rem;
+  }
+}
+
+.icons img {
+  max-width: 100%;
+}
+
+.index-discount__main-image {
+  text-align: center;
+  width: 100%;
+  height: 18rem;
+  padding: 3.75rem 0;
+  background: url(../assets/Images/coldbrewbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @include desktop {
+    width: 35%;
+    height: 25rem;
+  }
+}
+
+.index-discount__main-image::after {
+  content: "";
+  width: 98%;
+  height: 98%;
+  border: 0.3125rem solid $secondary-color;
+  position: absolute;
+  top: 0.75rem;
+  left: -0.25rem;
+
+  @include desktop {
+    top: -1.25rem;
+    left: -1.25rem;
+  }
+}
+
+.index-discount__main-image img {
+  transform: rotate(-20deg);
+}
+
+.index-discount__main-content {
+  width: 100%;
+  @include desktop {
+    width: 45%;
+  }
+}
+
+.index-discount__content-title {
+  text-align: left;
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: $graphite;
+  margin: 0px;
+}
+
+.index-products__image {
+  min-height: 15rem;
+  max-height: 34.375rem;
+}
+
+.index-coffee__bag {
+  margin: 3rem 0;
+  width: 7rem;
+
+  @include desktop {
+    width: 15rem;
+    margin-left: 10px;
+  }
+}
+
+.btn-learn__more {
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn-learn-more::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 0.125rem solid $graphite;
+  position: absolute;
+  top: -0.4125rem;
+  left: -0.4125rem;
+}
+
+.btn-learn__more a {
+  text-transform: uppercase;
+}
+
+/* --- FOOTER--- */
+
+.index-footer__div {
+  display: flex;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 1rem;
+
+  @include desktop {
+    padding: 0rem 3rem 1rem 3rem;
+    justify-content: space-between;
+  }
+}
+
+.index-address__parag,
+.index-hours__parag {
+  margin: 0;
+  padding: 0px;
+}
+
+.index-address__title {
+  @include desktop {
+    margin: 30px 0;
+  }
+}
+
+.index-hours__bold {
+  font-weight: bold;
+}
+
+.index-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    display: block;
+  }
+}

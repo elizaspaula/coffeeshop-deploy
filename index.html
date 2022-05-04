@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <title>Coffee Shop - Home</title>
+  </head>
+  <body>
+    <!-- NAV BAR SECTION -->
+    <header class="header">
+      <div class="main-header">
+        <div class="main-header__wrapper">
+          <div class="main-header__logo">
+            <a href="./index.html">
+              <img
+                class="logo"
+                src="./assets/Icons/coffee-beans-logo-and-footer.svg"
+                alt="logo"
+              />
+            </a>
+            <h1 class="main-header__title">nitro</h1>
+          </div>
+          <nav class="main-header__nav nav">
+            <ul class="nav__list" style="list-style-type: none">
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./pages/menu.html">Menu</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./pages/menu.html">Shop Now</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- HERO SECTION -->
+      <div class="index-coffee">
+        <div class="index-coffee__div">
+          <h1 class="index-coffee__title">Nitro Coffee</h1>
+          <p class="index-coffee__parag">
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain Coffea species.
+          </p>
+          <a href="./pages/menu.html" class="btn__shop-now" id="shop">
+            SHOP NOW
+          </a>
+        </div>
+        <div class="index-coffe__div-img">
+          <img
+            class="index-coffee__bag"
+            src="./assets/Images/coffeebeans-hero.png"
+            alt="coffee bag"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- PRODUCTS SECTION -->
+      <section class="index-products__section">
+        <h2 class="index-products__title">Our Products</h2>
+        <div class="index-products__div">
+          <ul class="index-products__list" style="list-style-type: none">
+            <li>
+              <div class="index-products__image-div">
+                <img
+                  class="index-products__image"
+                  src="./assets/Images/coffeebeans.png"
+                  alt="coffee beans"
+                />
+              </div>
+              <div class="index-products__body">
+                <div class="index-products__copy">
+                  <h3 class="index-products__item">Coffee Beans</h3>
+                  <p class="index-products__subtitle">Pack of 3</p>
+                </div>
+                <div class="index-products__body-price">
+                  <h2 class="index-products__price">$19</h2>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="index-products__image-div">
+                <img
+                  class="index-products__image"
+                  src="./assets/Images/coldbrew.png"
+                  alt="coffee cup"
+                />
+              </div>
+              <div class="index-products__body">
+                <div class="index-products__copy">
+                  <h3 class="index-products__item">Cold Brew</h3>
+                  <p class="index-products__subtitle">1 can</p>
+                </div>
+                <div class="index-products__body-price">
+                  <h2 class="index-products__price">$5</h2>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="index-products__image-div">
+                <img
+                  class="index-products__image"
+                  src="./assets/Images/inhousebrew.png"
+                  alt="in-house brew"
+                />
+              </div>
+              <div class="index-products__body">
+                <div class="index-products__copy">
+                  <h3 class="index-products__item">In-House Brew</h3>
+                  <p class="index-products__subtitle">1 cup</p>
+                </div>
+                <div class="index-products__body-price">
+                  <h2 class="index-products__price">$3</h2>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btn__view">
+          <a href="./pages/menu.html" class="btn__view-all">
+            <span class="btn__view-body"> VIEW ALL </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- DISCOUNT -->
+      <section class="index-discount__section">
+        <div class="index-discount__main">
+          <div class="index-discount__main-content">
+            <h2 class="index-discount__content-title">We're Different</h2>
+            <p>
+              We grow and roast our own beans. Every bean, every cup, every step
+              of the way, we strive for excellence.
+            </p>
+            <div class="index-discount__icons">
+              <div class="icons">
+                <img src="./assets/Icons/planting.svg" alt="planting" />
+              </div>
+              <div class="icons">
+                <img src="./assets/Icons/coffee-beans.svg" alt="beans" />
+              </div>
+              <div class="icons">
+                <img src="./assets/Icons/coffee-cup.svg" alt="coffee cup" />
+              </div>
+            </div>
+            <div class="btn-learn__more">
+              <a href="./pages/menu.html" class="btn-learn-more">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="index-discount__main-image">
+            <img
+              class="index-discount__image-bottle"
+              src="assets/Images/coldbrew-removebg-preview.png"
+              alt="bottle of coffee"
+            />
+          </div>
+        </div>
+        <div class="index-discount">
+          <p class="index-discount__description">
+            Get 20% off your first order with code:
+            <span class="index-discount__bold"> FirstNitro</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="index__footer">
+      <div class="index-footer__div">
+        <!-- ADDRESS -->
+        <div class="index-address">
+          <h3 class="index-address__title">Address</h3>
+          <p class="index-address__parag">503 Broadway Penthouse</p>
+          <p class="index-address__parag">New York</p>
+        </div>
+        <!-- HOURS -->
+        <div class="index-hours">
+          <h3 class="index-hours__title">Hours</h3>
+          <p class="index-hours__parag">
+            <span class="index-hours__bold"> Monday - Friday:</span> 9am - 7pm
+          </p>
+          <p class="index-hours__parag">
+            <span class="index-hours__bold"> Saturday - Sunday:</span>10am - 5pm
+          </p>
+        </div>
+        <!-- SOCIAL INFO -->
+        <div class="index-social">
+          <h3 class="index-social__title">Social</h3>
+          <a href="https://www.facebook.com/">
+            <img
+              class="icons"
+              src="./assets/Icons/Facebook-Icon.svg"
+              alt="facebook"
+            />
+          </a>
+
+          <a href="https://www.yelp.com/">
+            <img class="icons" src="./assets/Icons/Yelp-Icon.svg" alt="yelp" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img
+              class="icons"
+              src="./assets/Icons/Instagram-Icon.svg"
+              alt="instagram"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
